@@ -5,22 +5,22 @@ const cakes = [
   {
     name: 'Lemon Loaf',
     description: 'A zesty delight with a perfect balance of sweet and tart, topped with a tangy lemon glaze.',
-    img: '<IMAGE_URL_1>'
+    img: '<./images/lemon-loaf.jpg>' // Replace with actual image URL
   },
   {
     name: 'Vanilla Loaf',
     description: 'Classic vanilla flavor with a moist, buttery crumb and a delicate vanilla bean glaze.',
-    img: '<IMAGE_URL_2>'
+    img: '<././images/vanilla-loaf.jpg>' // Replace with actual image URL
   },
   {
     name: 'Blueberry Loaf',
     description: 'Bursting with juicy blueberries and a hint of lemon, finished with a sweet crumb topping.',
-    img: '<IMAGE_URL_3>'
+    img: '<./images/blueberry-loaf.jpg>' // Replace with actual image URL
   },
   {
     name: 'Banana Loaf',
     description: 'Rich banana flavor with walnuts and a caramelized crust, made with perfectly ripe bananas.',
-    img: '<IMAGE_URL_4>'
+    img: '<./images/banana-loaf.jpg>' // Replace with actual image URL
   }
 ];
 
