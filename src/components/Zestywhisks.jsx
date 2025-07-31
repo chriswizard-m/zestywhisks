@@ -1,26 +1,32 @@
 import React from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+// Import images
+import lemonLoaf from '../images/lemon.jpg';
+import vanillaLoaf from '../images/vanilla.jpg';
+import blueberryLoaf from '../images/bl_cake.jpg';
+import bananaLoaf from '../images/banana_cake.jpg';
+
 const cakes = [
   {
     name: 'Lemon Loaf',
     description: 'A zesty delight with a perfect balance of sweet and tart, topped with a tangy lemon glaze.',
-    img: '<./images/lemon-loaf.jpg>' // Replace with actual image URL
+    img: lemonLoaf
   },
   {
     name: 'Vanilla Loaf',
     description: 'Classic vanilla flavor with a moist, buttery crumb and a delicate vanilla bean glaze.',
-    img: '<././images/vanilla-loaf.jpg>' // Replace with actual image URL
+    img: vanillaLoaf
   },
   {
     name: 'Blueberry Loaf',
     description: 'Bursting with juicy blueberries and a hint of lemon, finished with a sweet crumb topping.',
-    img: '<./images/blueberry-loaf.jpg>' // Replace with actual image URL
+    img: blueberryLoaf
   },
   {
     name: 'Banana Loaf',
     description: 'Rich banana flavor with walnuts and a caramelized crust, made with perfectly ripe bananas.',
-    img: '<./images/banana-loaf.jpg>' // Replace with actual image URL
+    img: bananaLoaf
   }
 ];
 
@@ -51,7 +57,12 @@ export default function ZestyWhisks() {
             {cakes.map((cake, idx) => (
               <div key={idx} className="col-md-6 col-lg-3 mb-4">
                 <div className="card h-100 shadow border-0">
-                  <img src={cake.img} alt={cake.name} className="card-img-top" />
+                  <img
+                    src={cake.img}
+                    alt={cake.name}
+                    className="card-img-top object-cover"
+                    style={{ width: '100%', height: '200px' }}
+                  />
                   <div className="card-body">
                     <h5 className="card-title fw-bold text-warning">{cake.name}</h5>
                     <p className="card-text small">{cake.description}</p>
